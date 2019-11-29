@@ -1,0 +1,57 @@
+/*global*/
+
+
+body {
+    width:100%;
+margin: 0;
+}
+*, *::before,*::after {
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    img {
+        width: 100%;
+    }
+}
+.menu {
+    z-index: 2;
+    position: absolute;
+    top: 2vw;
+    left: 40vw;
+}
+ul {
+    width: 100%;
+    list-style: none;    
+    li {
+        color: black;
+        display: inline-block;
+        margin: 0 10px ; 
+        a {
+            font-size: 1.35vw;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+.golden {
+    width: 10px;
+    text-align: left;
+    margin-left: -29vw;
+    margin-top: -2.5vw;
+    font-size: 1.7vw;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 5px 5px black;
+}
