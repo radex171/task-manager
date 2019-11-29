@@ -1,7 +1,8 @@
 /*global*/
 body {
-  width: 100%;
-  margin: 0;
+  width: 1400px;
+  margin: 0 auto;
+  background: black;
 }
 
 *, *::before, *::after {
@@ -11,24 +12,37 @@ body {
 /*header*/
 .header {
   width: 100%;
+  height: auto;
+  margin: 0 auto;
   position: relative;
+}
+
+.header .content {
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  padding: 20%;
+  text-align: center;
+  font-size: 35px;
 }
 
 .photo {
   width: 100%;
-  height: auto;
   position: absolute;
 }
 
 .photo img {
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
   z-index: 2;
   position: absolute;
-  top: 2vw;
-  left: 40vw;
+  top: 30px;
+  left: 580px;
 }
 
 ul {
@@ -43,18 +57,17 @@ ul li {
 }
 
 ul li a {
-  font-size: 1.35vw;
+  font-size: 18px;
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
 .golden {
-  width: 10px;
-  text-align: left;
-  margin-left: -29vw;
-  margin-top: -2.5vw;
-  font-size: 1.7vw;
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  font-size: 20px;
   font-weight: bold;
   color: gold;
   text-shadow: 5px 5px black;
