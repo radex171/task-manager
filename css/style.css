@@ -1,6 +1,7 @@
 /*global*/
 body {
   width: 1400px;
+  height: auto;
   margin: 0 auto;
   background: black;
 }
@@ -19,16 +20,18 @@ body {
 
 .header .content {
   display: inline-block;
-  z-index: 2;
-  position: relative;
-  padding: 20%;
+  position: absolute;
+  top: 220px;
+  left: 280px;
   text-align: center;
   font-size: 35px;
+  color: white;
 }
 
 .photo {
   width: 100%;
   position: absolute;
+  padding: 0;
 }
 
 .photo img {
@@ -36,10 +39,10 @@ body {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.5;
 }
 
 .menu {
-  z-index: 2;
   position: absolute;
   top: 30px;
   left: 580px;
@@ -53,23 +56,69 @@ ul {
 ul li {
   color: black;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 ul li a {
-  font-size: 18px;
-  color: black;
+  font-size: 16px;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+button {
+  height: 70px;
+  width: 240px;
+  color: white;
+  background: gold;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .golden {
+  font-family: "Marck Script", cursive;
   position: absolute;
   top: 20px;
-  left: 180px;
-  font-size: 20px;
+  left: 250px;
+  font-size: 26px;
   font-weight: bold;
   color: gold;
   text-shadow: 5px 5px black;
+}
+
+/*SERVICES*/
+.services {
+  position: static;
+  width: 1400px;
+  height: 550px;
+  background: white;
+  margin: 700px auto 0 auto;
+  z-index: 2;
+}
+
+.services .content {
+  text-align: center;
+  padding: 80px 0 0 0;
+}
+
+.services .content h1 {
+  font-size: 40px;
+}
+
+.services .content p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.group {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 60px;
+}
+
+.card {
+  padding: 0 auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
