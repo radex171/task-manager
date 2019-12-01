@@ -1,116 +1,108 @@
 /*global*/
 $font1: 'Marck Script', cursive;
-
-body {
-    width:1400px;
-    height: auto;
-margin: 0 auto;
-background: black;
-}
-*, *::before,*::after {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+body {
+   font-size: 10px;
+    margin: 0;
+   padding: 0;
 }
 
 /*header*/
 
 .header {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    
-    
+    margin:0 auto;
+    height: 76vh;
     position: relative;
-
-    .content {
-        display:inline-block;
-        position: absolute;
-        top: 220px;
-        left: 280px;
-        text-align: center;
-        font-size: 35px;
-        color: white;
-    }   
-}
-
-.photo {
-    width: 100%;
-    position: absolute;
-    padding: 0;
-    img {
+    height: 76vh;
+    .photo {
+        background-color: black;
+        opacity: 1;
+    }
+    
+    img{
         width: 100%;
-        height:auto;
+        height: 76vh;
         object-fit: cover;
-        opacity:0.5;
-      
+        opacity:0.5;      
     }
-}
-.menu {
-  
-    position: absolute;
-    top: 30px;
-    left: 580px;
-}
-ul {
-    width: 100%;
-    list-style: none;    
-    li {
-        color: black;
-        display: inline-block;
-        margin: 0 15px ; 
-        a {
-            font-size: 16px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    }
-}
-button {
-    height: 70px;
-    width: 240px;
-    color:white;
-    background: gold;
-    border-radius: 5px;
-    font-size:18px;
-    font-weight: bold;
 }
 .golden {
     font-family: $font1;
+    display: inline-block;
+    font-size: 1.9vw;
     position: absolute;
-    top: 20px;
-    left: 250px;
-    font-size: 26px;
-    font-weight: bold;
+    width: 50vw;
+    height: 5vh;
+    top: 4.5vh;
+    left: 17vw;
     color: gold;
-    text-shadow: 5px 5px black;
+    text-shadow: 3px 3px 3px white;
 }
+nav {
+    display: inline-block;
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    top:4vh;
+    left: 45vw;
+ 
 
-/*SERVICES*/
-
-.services {
-    position: static;
-    width: 1400px;
-    height: 550px;
-    background:white;
-    margin: 700px auto 0 auto;
-    z-index: 2;
-    .content {
-        text-align: center;
-        padding: 80px 0 0 0;
-        h1 {
-            font-size: 40px;
-        }
-        p{
-            font-size: 18px;
-            font-style: italic;
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin-right: 36px;
+            position: relative;
+            a {
+                font-size: 1.6vw;
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
-.group {
-    display: inline-flex;
-    margin-top: 60px;
+
+.button-text {
+    display: inline-block;
+    position: absolute;
+    width: 60vw;
+    height: 5vh;
+    top:26vh;
+    left: 20vw;
+    text-align: center;
+    font-size: 2.2vw;
+    color: white;
 }
-    .card{
-        padding: 0 auto;
-        text-align: center;
+span{
+    font-size: 4.8vw;
+    font-weight:bold;
+    }
+
+button {
+    margin-top: 3vw;
+    width: 17vw;
+    height: 4.5vw;
+    background: gold;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 1.2vw;
+    border: none;
+}
+
+/* SERVICES*/
+
+.services {
+    text-align: center;
+    margin-top: 13vh;
+    h4 {
+        font-size: 3vw;
+        margin-bottom:0;        
+    }
+    span {
+        font-size: 1vw;
+        font-weight:normal; 
+       }
     }

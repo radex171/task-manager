@@ -1,124 +1,115 @@
 /*global*/
-body {
-  width: 1400px;
-  height: auto;
-  margin: 0 auto;
-  background: black;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/*header*/
-.header {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-}
-
-.header .content {
-  display: inline-block;
-  position: absolute;
-  top: 220px;
-  left: 280px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-.photo {
-  width: 100%;
-  position: absolute;
+body {
+  font-size: 10px;
+  margin: 0;
   padding: 0;
 }
 
-.photo img {
+/*header*/
+.header {
+  margin: 0 auto;
+  height: 76vh;
+  position: relative;
+  height: 76vh;
+}
+
+.header .photo {
+  background-color: black;
+  opacity: 1;
+}
+
+.header img {
   width: 100%;
-  height: auto;
+  height: 76vh;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.5;
 }
 
-.menu {
-  position: absolute;
-  top: 30px;
-  left: 580px;
-}
-
-ul {
-  width: 100%;
-  list-style: none;
-}
-
-ul li {
-  color: black;
+.golden {
+  font-family: "Marck Script", cursive;
   display: inline-block;
-  margin: 0 15px;
+  font-size: 1.9vw;
+  position: absolute;
+  width: 50vw;
+  height: 5vh;
+  top: 4.5vh;
+  left: 17vw;
+  color: gold;
+  text-shadow: 3px 3px 3px white;
 }
 
-ul li a {
-  font-size: 16px;
-  color: white;
+nav {
+  display: inline-block;
+  position: absolute;
+  width: 50vw;
+  height: 5vh;
+  top: 4vh;
+  left: 45vw;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+
+nav ul li a {
+  font-size: 1.6vw;
   text-decoration: none;
+  color: white;
+}
+
+.button-text {
+  display: inline-block;
+  position: absolute;
+  width: 60vw;
+  height: 5vh;
+  top: 26vh;
+  left: 20vw;
+  text-align: center;
+  font-size: 2.2vw;
+  color: white;
+}
+
+span {
+  font-size: 4.8vw;
   font-weight: bold;
 }
 
 button {
-  height: 70px;
-  width: 240px;
-  color: white;
+  margin-top: 3vw;
+  width: 17vw;
+  height: 4.5vw;
   background: gold;
-  border-radius: 5px;
-  font-size: 18px;
+  color: white;
+  font-size: 1.5vw;
   font-weight: bold;
+  border-radius: 1.2vw;
+  border: none;
 }
 
-.golden {
-  font-family: "Marck Script", cursive;
-  position: absolute;
-  top: 20px;
-  left: 250px;
-  font-size: 26px;
-  font-weight: bold;
-  color: gold;
-  text-shadow: 5px 5px black;
-}
-
-/*SERVICES*/
+/* SERVICES*/
 .services {
-  position: static;
-  width: 1400px;
-  height: 550px;
-  background: white;
-  margin: 700px auto 0 auto;
-  z-index: 2;
-}
-
-.services .content {
   text-align: center;
-  padding: 80px 0 0 0;
+  margin-top: 13vh;
 }
 
-.services .content h1 {
-  font-size: 40px;
+.services h4 {
+  font-size: 3vw;
+  margin-bottom: 0;
 }
 
-.services .content p {
-  font-size: 18px;
-  font-style: italic;
-}
-
-.group {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: 60px;
-}
-
-.card {
-  padding: 0 auto;
-  text-align: center;
+.services span {
+  font-size: 1vw;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
