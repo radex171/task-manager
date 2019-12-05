@@ -1,10 +1,15 @@
 /*global*/
 $font1: 'Marck Script', cursive;
-*, *::before, *::after {
-    box-sizing: border-box;
+
+*{
+    font-size: 10px;
 }
-body {
-   font-size: 10px;
+
+*::before, *::after {
+    box-sizing: border-box;  
+}
+
+body, .col, .row { 
     margin: 0;
    padding: 0;
 }
@@ -12,24 +17,95 @@ body {
 /*header*/
 
 .header {
-    margin:0 auto;
-    height: 76vh;
+    width: 100%;
+    height: 700px;
     position: relative;
-    height: 76vh;
+    
     .photo {
-        background-color: black;
-        opacity: 1;
+        width: 100%;
+        height: 700px;
+        background: black;  
     }
     
     img{
         width: 100%;
-        height: 76vh;
-        object-fit: cover;
-        opacity:0.5;      
+        height: 700px;
+        object-fit:initial;
+        opacity:0.5;    
     }
 }
+
+nav {
+    display: inline-block;
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    top: 4vh;
+    left: 45vw;
+    .col-xs {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+        display: none;
+        display: inline-block;    
+    }
+  }
+
+  .hamb img {
+    width: 100%;
+    height: 100%; 
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: visible;
+    li {
+        display: inline-block;
+        margin-right: 36px;
+        position: relative;
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+    
+.button-text {
+    display: inline-block;
+    position: absolute;
+    width: 80vw;
+    height: 200px;
+    top: 255px;
+    left: 10vw;
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    font-size: 20px;
+    h2 i {
+        font-size: 20px;
+    }
+  }
+  
+span {
+    font-size: 4vw;
+    font-weight: bold;
+}
+  
+button {
+    margin-top: 13px;
+    width: 340px;
+    height: 6vh;
+    background: gold;
+    color: white;
+    font-size: 1.8vw;
+    font-weight: bold;
+    border-radius: 1.2vw;
+    border: none;
+  }
+
 .golden {
-    font-family: $font1;
+    font-family: "Marck Script", cursive;
     display: inline-block;
     font-size: 1.9vw;
     position: absolute;
@@ -39,70 +115,180 @@ body {
     left: 17vw;
     color: gold;
     text-shadow: 3px 3px 3px white;
-}
-nav {
-    display: inline-block;
-    position: absolute;
-    width: 50vw;
-    height: 5vh;
-    top:4vh;
-    left: 45vw;
- 
+  }
 
-    ul {
-        list-style-type: none;
-        li {
-            display: inline-block;
-            margin-right: 36px;
-            position: relative;
+/*content*/
+
+.services {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.content {
+    text-align: center;
+    margin: 11vh 0;
+    height: auto;
+    
+    h2 b{
+        margin: 0;
+        font-size: 4rem;
+        margin-bottom:10px;
+    }
+    span i{
+        font-size: 1.5rem;
+    }
+}
+.card {
+    height: 385px;
+
+    img{
+        margin: 0 auto;   
+    }
+}
+
+.card-body { 
+    text-align: center;
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+
+/*portfolio*/
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    background: rgb(214, 214, 214);
+    text-align: center;
+    
+    .content-text {
+        padding-top: 60px;
+        }
+        h2 {
+            b {
+                font-size: 3rem;
+            }
+        }
+        .row {
+            margin: 50px auto;
             a {
-                font-size: 1.6vw;
                 text-decoration: none;
-                color: white;
+                color:black ;
+            }
+        }
+    .card {
+        height: auto;
+        background: white;
+        padding: 0 0 30px 0;;
+        h5{
+            font-size: 2.2rem;
+            margin: 0;
+            margin-top: 20px;
+        }
+        span {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+/*footer*/
+.fot .copyright{
+    padding-top:6vh;
+}
+
+.fot {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+
+    .social-media {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        ul {
+            display: flex;   
+            justify-content: center;
+            li {
+                display: flex;
+                font-size: 0; 
+                height: 80px;
+                width: 80px;
+                background-color:black;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                margin: 2vw;
+                padding: 0;        
+                a {
+                    color:white;
+                    font-size: 0;
+                    i { 
+                        font-size: 30px; 
+                        margin: 0 50%;
+                        transform: translateX(-50%);
+                    }
+                }
             }
         }
     }
 }
 
-.button-text {
-    display: inline-block;
-    position: absolute;
-    width: 60vw;
-    height: 5vh;
-    top:26vh;
-    left: 20vw;
-    text-align: center;
-    font-size: 2.2vw;
-    color: white;
-}
-span{
-    font-size: 4.8vw;
-    font-weight:bold;
-    }
-
-button {
-    margin-top: 3vw;
-    width: 17vw;
-    height: 4.5vw;
-    background: gold;
-    color: white;
-    font-size: 1.5vw;
-    font-weight: bold;
-    border-radius: 1.2vw;
-    border: none;
+.copyright span {
+    height: 50%;
+    font-size: 20px;
+    padding:30px;
 }
 
-/* SERVICES*/
+@media(max-width:1059px){
 
-.services {
-    text-align: center;
-    margin-top: 13vh;
-    h4 {
-        font-size: 3vw;
-        margin-bottom:0;        
+    nav {        
+        position: absolute;
+        top:20px;
+        left:10px
     }
-    span {
-        font-size: 1vw;
-        font-weight:normal; 
-       }
+    button .hamb {        
+        margin:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+
+    header nav ul {
+        width:30px;
+        padding: 0 ;
+        display: none;
+    }
+
+    li {
+        font-size: 38px;
+        font-weight: bold;
+        padding-left:1vw;
+    } 
+
+    header nav:hover ul {
+        display:block;
+        position: absolute;    
+    }
+
+    .golden {
+        font-size: 28px;
+        left: 160px;
+    }
+
+    .button-text button{
+        width: 260px;
+        top:310px;
+        font-size: 2.6vh;
+    }
+}
+@media (min-width:1060px){
+    header nav .col-xs{
+        display: none;
+    }
+}
